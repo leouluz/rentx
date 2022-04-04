@@ -1,13 +1,15 @@
 import React from "react";
 import { 
   Container, 
-  Title,
+  TotalCars,
   Header,
+  HeaderContent,
 } from "./styles";
 
 import Logo from "../../assets/logo.svg"
 
 import { StatusBar } from "react-native";
+import { RFValue } from "react-native-responsive-fontsize";
 
 export function Home() {
   return (
@@ -18,9 +20,14 @@ export function Home() {
         translucent
       />
       <Header>
-        <Logo />
+        <HeaderContent>
+          <Logo 
+            width={RFValue(108)}
+            height={RFValue(12)}
+          />
+          <TotalCars>Total de 12 carros</TotalCars>
+        </HeaderContent>
       </Header>
-      <Title>Home</Title>
     </Container>
   );
 }
