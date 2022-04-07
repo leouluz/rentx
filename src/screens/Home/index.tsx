@@ -23,6 +23,15 @@ export function Home() {
     },
     thumbnail: 'https://www.pngmart.com/files/1/Audi-RS5-Red-PNG.png',
   }
+  const carDatatwo = {
+    brand: 'porsche',
+    name: 'Panamera',
+    rent: {
+      period: 'Ao Dia',
+      price: '340',
+    },
+    thumbnail: 'https://www.pngkit.com/png/full/237-2375888_porsche-panamera-s.png',
+  }
 
   return (
     <Container>
@@ -41,6 +50,7 @@ export function Home() {
         </HeaderContent>
       </Header>
       <Car data={carData} />
+      <Car data={carDatatwo} />
     </Container>
   );
 }
